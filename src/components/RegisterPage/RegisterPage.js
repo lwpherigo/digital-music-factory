@@ -4,6 +4,9 @@ import mapStoreToProps from '../../redux/mapStoreToProps';
 
 class RegisterPage extends Component {
   state = {
+    firstname: '',
+    lastname: '',
+    email: '',
     username: '',
     password: '',
   };
@@ -11,10 +14,13 @@ class RegisterPage extends Component {
   registerUser = (event) => {
     event.preventDefault();
 
-    if (this.state.username && this.state.password) {
+    if (this.state.firstname && this.state.lastname && this.state.email && this.state.username && this.state.password) {
       this.props.dispatch({
         type: 'REGISTER',
         payload: {
+          firstname: this.state.firstname,
+          lastname: this.state.lastname,
+          email: this.state.email,
           username: this.state.username,
           password: this.state.password,
         },
@@ -99,12 +105,13 @@ class RegisterPage extends Component {
             </label>
           </div>
           <div>
-            <input
+            <button
               className="register"
               type="submit"
               name="submit"
               value="Register"
-            />
+              onClick={this.registerUser}
+            >Register</button>
           </div>
         </form>
         <center>
