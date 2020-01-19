@@ -17,9 +17,12 @@ const Nav = (props) => (
     <SearchBar />
 
     <div className="nav-right">
+    <Link className="nav-link" to="/home">
+        Home
+    </Link>
     <Link className="nav-link" to="/about">
         About
-      </Link>
+    </Link>
       {props.store.user.id && (
         <>
           <Link className="nav-link" to="/info">

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import { connect, Link } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
+
 
 class SearchBar extends Component {
     state = {
@@ -11,7 +12,11 @@ class SearchBar extends Component {
         this.setState({
           [propertyName]: event.target.value,
         });
-      }
+    }
+
+    inputSearchTerm = (event) => {
+        this.props.dispatch({ type: 'GET_RESULTS', payload: this.state.searchTerm });
+    }
 
     render() {
         return(
@@ -22,11 +27,12 @@ class SearchBar extends Component {
                     placeholder="Track, Arist, Etc."
                     onChange={this.handleInputChange('searchTerm')}
                 />
-                <button>Search</button>
+                <Link to="/results">
+                <button onClick={this.inputSearchTerm}>Search</button>
+                </Link>
             </div>
         )
     }
-
 }
 
 export default connect(mapStoreToProps)(SearchBar);

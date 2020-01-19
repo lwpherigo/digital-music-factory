@@ -2,7 +2,7 @@ import axios from 'axios';
 import { put, takeLatest } from 'redux-saga/effects';
 
 function* getResults(action) {
-    console.log('in function* getTracks');
+    console.log('in function* getResults');
     try {
         const response = yield axios ({
             method: 'GET',
