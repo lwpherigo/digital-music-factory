@@ -4,7 +4,7 @@ import mapStoreToProps from '../../redux/mapStoreToProps';
 import Grid from '@material-ui/core/Grid';
 import { Howl } from 'howler';
 
-class TrackListItem extends Component {
+class ResultsListItem extends Component {
     state = {
         soundOff: true,
     }
@@ -47,15 +47,10 @@ class TrackListItem extends Component {
                     <Grid item xs={2}>
                         <span>{this.props.track.stage_name}</span>
                     </Grid>  
-                    <Grid item xs={2}>
-                        <div>
-                        <a href={this.props.track.path} download={this.props.track.key}>DOWNLOAD</a>
-                        </div>
-                    </Grid> 
                 </Grid>
             </div>
         )
     }
 }
 
-export default connect(mapStoreToProps)(TrackListItem);
+export default connect(mapStoreToProps)(ResultsListItem);

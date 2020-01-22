@@ -8,7 +8,12 @@ import React from 'react';
 const InfoPage = () => (
   <div>
     <p>
-      Info Page
+      Digital Music Factory knows that as an online creator or small production company, it can be hard to find good, 
+      high-quality music that is royalty-free. The struggle of dealing with 2-4 copyrights can get tricky, not to mention expensive.
+    </p>
+    <p>
+      That's why we, here at DMF, are committed to finding new, cool artists for you to use in your projects. Whether it's an ad campaign for
+      a local company or background music in your newest Thrift Shop Haul video on YouTube, we've got you covered.
     </p>
   </div>
 );
