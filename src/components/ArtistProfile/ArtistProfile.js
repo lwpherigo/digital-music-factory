@@ -15,6 +15,7 @@ class ArtistProfile extends Component {
         return(
             <div>
                 <h2>{this.props.store.selected.stage_name}</h2>
+                <p>{this.props.store.selected.bio}</p>
             </div>
         )
     }

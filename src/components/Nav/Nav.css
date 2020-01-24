@@ -1,27 +1,46 @@
 .nav-title {
-    padding: 30px;
-    font-size: 40px;
+    padding: 10px;
+    font-size: 90px;
     font-weight: 700;
+    word-spacing: 31px;
     display: inline-block;
     color: #f2f2f2;
-    padding-left: 150px;
+    /* outline: 2px black;
+    outline-color: black; */
+    -webkit-text-stroke: 3px black;
+    /* padding-left: 150px; */
 }
 
 .nav {
-  overflow: hidden;
-  background-color: #1f2424;
+  /* overflow: hidden; */
+  /* background: url("https://images.unsplash.com/photo-1502773860571-211a597d6e4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80") 
+    no-repeat
+    fixed; */
+
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgb(31, 31, 31)
+  ),
+  url(../../images/record-girl.jpg);
+  
+  /* background: url(../../images/record-girl.jpg)
+    no-repeat; */
+  background-size: cover;
+  background-position: 5% 61%;
   text-align: center;
 }
 
 .nav-link {
   margin-top: 15px;
-  float: left;
+  margin-bottom: 30px;
   color: #f2f2f2;
-  background-color: #4d0909;
+  background-color: #c99c20b4;
   text-align: center;
   padding: 15px 15px;
   text-decoration: none;
   font-size: 15px;
+  margin: 50px;
 
   /* these last two make the logout button in
   the nav bar look like another link */
@@ -35,6 +54,5 @@
 }
 
 .nav-right {
-  padding-right: 10px;
-  float: right;
+  float: center;
 }
