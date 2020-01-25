@@ -1,4 +1,5 @@
 import React from 'react';
+import './AboutPage.css';
 
 // This is one of our simplest components
 // It doesn't have local state, so it can be a function component.
@@ -8,6 +9,7 @@ import React from 'react';
 const AboutPage = () => (
   <div>
     <div>
+      <h1>About Us</h1>
     <p>
       Digital Music Factory knows that as an online creator or small production company, it can be hard to find good, 
       high-quality music that is royalty-free. The struggle of dealing with 2-4 copyrights can get tricky, not to mention expensive.

@@ -1,0 +1,16 @@
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+.inputs {
+    text-align: center;
+    color: white;
+}
+
+.login-button {
+    padding-top: 25px;
+    text-align: center;
+}

@@ -35,7 +35,7 @@
   margin-top: 15px;
   margin-bottom: 30px;
   color: #f2f2f2;
-  background-color: #c99c20b4;
+  background-color: #d3c440d7;
   text-align: center;
   padding: 15px 15px;
   text-decoration: none;
@@ -50,7 +50,7 @@
 }
 
 .nav-link:hover {
-  background-color: #641717;
+  background-color: #b9ab2cd7;
 }
 
 .nav-right {

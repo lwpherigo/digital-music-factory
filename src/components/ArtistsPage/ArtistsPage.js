@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import ArtistList from '../ArtistList/ArtistList';
+import './ArtistsPage.css';
 
 class ArtistsPage extends Component {
 
@@ -19,8 +20,9 @@ class ArtistsPage extends Component {
     })
 
     return(
-      <div>
-        {artistArray}
+      <div className="container">
+        <h1>Artists</h1>
+        <h3>{artistArray}</h3>
       </div>
     )
   }

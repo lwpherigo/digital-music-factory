@@ -4,7 +4,7 @@ Container
 
 .container {
     padding: 20px;
-    background-image: linear-gradient(rgb(134, 134, 104), rgb(68, 58, 58));
+    background-image: linear-gradient(rgb(31, 31, 31), rgb(68, 58, 58));
     text-align: center;
 }
 

@@ -16,7 +16,7 @@ class SearchBar extends Component {
           [propertyName]: event.target.value,
         });
     }
-
+    
     inputSearchTerm = (event) => {
         this.props.dispatch({ type: 'GET_RESULTS', payload: this.state.searchTerm });
     }

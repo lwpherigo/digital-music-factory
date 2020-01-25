@@ -21,7 +21,6 @@ import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
 import ResultsPage from '../ResultsPage/ResultsPage';
 import ArtistProfile from '../ArtistProfile/ArtistProfile';
-
 import './App.css';
 
 class App extends Component {

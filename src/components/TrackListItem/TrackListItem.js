@@ -47,10 +47,10 @@ class TrackListItem extends Component {
                         <button onClick={this.playSong}>PLAY</button>
                     </Grid>
                     <Grid item xs={1}>
-                        <span>{this.props.track.title}</span>
+                        <span className="listitem">{this.props.track.title}</span>
                     </Grid>
                     <Grid item xs={1}>
-                        <span>{this.props.track.stage_name}</span>
+                        <span className="listitem">{this.props.track.stage_name}</span>
                     </Grid>  
                     <Grid item xs={1}>
                         <div>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import mapStoreToProps from '../../redux/mapStoreToProps';
-
+import Grid from '@material-ui/core/Grid';
 
 class ArtistList extends Component {
 
@@ -19,7 +19,16 @@ class ArtistList extends Component {
   render() {
     return(
       <div onClick={this.goToProfile}>
-        <h1 className="artist-btn">{this.props.item.stage_name}</h1>
+        <Grid 
+        container
+        justify="center">
+          <Grid 
+          item xs={8}
+          className="artist-btn"
+          >
+            {this.props.item.stage_name}
+          </Grid>
+        </Grid>
       </div>
     )
   }

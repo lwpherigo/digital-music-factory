@@ -25,7 +25,7 @@ class LandingPage extends Component {
 
         return (
             <div className="container">
-                <h2>{this.state.heading}</h2>
+                <h1>{this.state.heading}</h1>
                 <div>
                     {trackArray}
                 </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import ArtistProfileItem from '../ArtistProfileItem/ArtistProfileItem';
+import './ArtistProfile.css';
 
 class ArtistProfile extends Component {
 
@@ -13,7 +14,7 @@ class ArtistProfile extends Component {
         // })
 
         return(
-            <div>
+            <div className="container">
                 <h2>{this.props.store.selected.stage_name}</h2>
                 <p>{this.props.store.selected.bio}</p>
             </div>

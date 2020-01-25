@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
+import './LoginPage.css';
 
 class LoginPage extends Component {
   state = {
@@ -32,7 +33,7 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         {this.props.store.errors.loginMessage && (
           <h2
             className="alert"
@@ -43,9 +44,10 @@ class LoginPage extends Component {
         )}
         <form onSubmit={this.login}>
           <h1>Login</h1>
-          <div>
+          <div className="inputs">
             <label htmlFor="username">
               Username:
+              <br />
               <input
                 type="text"
                 name="username"
@@ -54,9 +56,10 @@ class LoginPage extends Component {
               />
             </label>
           </div>
-          <div>
+          <div className="inputs">
             <label htmlFor="password">
               Password:
+              <br />
               <input
                 type="password"
                 name="password"
@@ -65,7 +68,7 @@ class LoginPage extends Component {
               />
             </label>
           </div>
-          <div>
+          <div className="login-button">
             <input
               className="log-in"
               type="submit"
