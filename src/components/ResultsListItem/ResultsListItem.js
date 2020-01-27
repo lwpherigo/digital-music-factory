@@ -47,6 +47,11 @@ class ResultsListItem extends Component {
                     <Grid item xs={2}>
                         <span>{this.props.track.stage_name}</span>
                     </Grid>  
+                    <Grid item xs={1}>
+                        <div>
+                        <a href={this.props.track.path} download={this.props.track.key}>DOWNLOAD</a>
+                        </div>
+                    </Grid> 
                 </Grid>
             </div>
         )
