@@ -22,7 +22,9 @@ class ArtistsPage extends Component {
     return(
       <div className="container">
         <h1>Artists</h1>
+        <p>Click on an artist name to get a little more information about them!</p>
         <h3>{artistArray}</h3>
+        <br />
       </div>
     )
   }

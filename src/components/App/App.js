@@ -35,7 +35,7 @@ class App extends Component {
           <Nav />
           <Switch>
             {/* Visiting localhost:3000 will redirect to localhost:3000/home */}
-            <Redirect exact from="/" to="/home" />
+            <Redirect exact from="/" to="/login" />
             {/* Visiting localhost:3000/about will show the about page.
             This is a route anyone can see, no login necessary */}
             <Route
@@ -43,22 +43,22 @@ class App extends Component {
               path="/about"
               component={AboutPage}
             />
-            <Route
+            <ProtectedRoute
               exact
               path="/home"
               component={LandingPage}
             />
-            <Route
+            <ProtectedRoute
               exact
               path="/results"
               component={ResultsPage}
             />
-            <Route
+            <ProtectedRoute
               exact
               path="/artists"
               component={ArtistsPage}
             />
-            <Route 
+            <ProtectedRoute 
               exact
               path="/artist-profile"
               component={ArtistProfile}

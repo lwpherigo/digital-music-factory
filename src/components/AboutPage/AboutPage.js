@@ -8,7 +8,7 @@ import './AboutPage.css';
 
 const AboutPage = () => (
   <div>
-    <div>
+    <div className="about-container">
       <h1>About Us</h1>
     <p>
       Digital Music Factory knows that as an online creator or small production company, it can be hard to find good, 

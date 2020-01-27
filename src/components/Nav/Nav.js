@@ -18,15 +18,15 @@ const Nav = (props) => (
 
     <div className="nav-right">
 
-    <Link className="nav-link" to="/home">
+    {/* <Link className="nav-link" to="/home">
       Home
     </Link>
     <Link className="nav-link" to="/artists">
       Artists
-    </Link>
-    <Link className="nav-link" to="/about">
+    </Link> */}
+    {/* <Link className="nav-link" to="/about">
         About Us
-    </Link>
+    </Link> */}
     {/* <Link className="nav-link" to="/login"> */}
         {/* Show this link if they are logged in or not,
         but call this link 'Home' if they are logged in,
@@ -35,6 +35,9 @@ const Nav = (props) => (
       </Link> */}
       { !props.store.user.id && (
         <>
+          <Link className="nav-link" to="/about">
+            About Us
+          </Link>
           <Link className="nav-link" to="/login">
             Login / Register
           </Link>  
@@ -42,6 +45,15 @@ const Nav = (props) => (
       )}
       {props.store.user.id && (
         <>
+          <Link className="nav-link" to="/home">
+            Home
+          </Link>
+          <Link className="nav-link" to="/artists">
+            Artists
+          </Link>
+          <Link className="nav-link" to="/about">
+            About Us
+          </Link>
           <LogOutButton className="nav-link"/>
         </>
       )}

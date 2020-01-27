@@ -1,0 +1,14 @@
+.register-container {
+    background-image: linear-gradient(rgb(31, 31, 31), rgb(68, 58, 58));
+    padding-top: 20px;
+}
+
+.inputs {
+    text-align: center;
+    color: white;
+}
+
+.register-button {
+    /* padding-top: 25px; */
+    text-align: center;
+}

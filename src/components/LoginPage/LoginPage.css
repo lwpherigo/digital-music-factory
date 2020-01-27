@@ -1,5 +1,5 @@
 h1 {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: center;
     font-size: 45px;
     color: white;
@@ -11,6 +11,10 @@ h1 {
 }
 
 .login-button {
-    padding-top: 25px;
+    /* padding-top: 25px; */
     text-align: center;
+}
+
+.link-button {
+    padding-top: 30px;
 }

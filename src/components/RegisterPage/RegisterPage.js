@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
+import './RegisterPage.css';
 
 class RegisterPage extends Component {
   state = {
@@ -38,7 +39,7 @@ class RegisterPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="register-container">
         {this.props.errors.registrationMessage && (
           <h2
             className="alert"
@@ -49,9 +50,10 @@ class RegisterPage extends Component {
         )}
         <form onSubmit={this.registerUser}>
           <h1>Register User</h1>
-          <div>
+          <div className="inputs">
             <label htmlFor="firstname">
               First Name:
+              <br />
               <input
                 type="text"
                 name="firstname"
@@ -60,9 +62,10 @@ class RegisterPage extends Component {
               />
             </label>
           </div>
-          <div>
+          <div className="inputs">
             <label htmlFor="lastname">
               Last Name:
+              <br />
               <input
                 type="text"
                 name="lastname"
@@ -71,9 +74,10 @@ class RegisterPage extends Component {
               />
             </label>
           </div>
-          <div>
+          <div className="inputs">
             <label htmlFor="email">
               Email:
+              <br />
               <input
                 type="text"
                 name="email"
@@ -82,9 +86,10 @@ class RegisterPage extends Component {
               />
             </label>
           </div>
-          <div>
+          <div className="inputs">
             <label htmlFor="username">
               Username:
+              <br />
               <input
                 type="text"
                 name="username"
@@ -93,9 +98,10 @@ class RegisterPage extends Component {
               />
             </label>
           </div>
-          <div>
+          <div className="inputs">
             <label htmlFor="password">
               Password:
+              <br />
               <input
                 type="password"
                 name="password"
@@ -104,7 +110,7 @@ class RegisterPage extends Component {
               />
             </label>
           </div>
-          <div>
+          <div className="register-button">
             <button
               className="register"
               type="submit"
@@ -114,6 +120,19 @@ class RegisterPage extends Component {
             >Register</button>
           </div>
         </form>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div className="">
         <center>
           <button
             type="button"
@@ -123,6 +142,7 @@ class RegisterPage extends Component {
             Login
           </button>
         </center>
+        </div>
       </div>
     );
   }
