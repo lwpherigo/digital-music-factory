@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import Grid from '@material-ui/core/Grid';
 import { Howl } from 'howler';
+import './ResultsListItem.css';
 
 class ResultsListItem extends Component {
     state = {
@@ -36,20 +37,23 @@ class ResultsListItem extends Component {
     render() {
 
         return(
-            <div>
-                <Grid container spacing={2}>
+            <div className="results-container">
+                <Grid 
+                    container 
+                    spacing={2}
+                    justify="center">
                     <Grid item xs={1}>
                         <button onClick={this.playSong}>PLAY</button>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={1}>
                         <span>{this.props.track.title}</span>
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={1}>
                         <span>{this.props.track.stage_name}</span>
                     </Grid>  
                     <Grid item xs={1}>
                         <div>
-                        <a href={this.props.track.path} download={this.props.track.key}>DOWNLOAD</a>
+                        <a href={this.props.track.path} download={this.props.track.key}>download</a>
                         </div>
                     </Grid> 
                 </Grid>
