@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LogOutButton from '../LogOutButton/LogOutButton';
-import './Nav.css';
+// import './Nav.css';
+import './Nav2.css';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import SearchBar from '../SearchBar/SearchBar';
 

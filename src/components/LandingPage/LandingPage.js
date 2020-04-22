@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import TrackListItem from '../TrackListItem/TrackListItem';
+import SearchBar from '../SearchBar/SearchBar';
 
-import './LandingPage.css';
+// import './LandingPage.css';
 
 class LandingPage extends Component {
     state = {
@@ -25,6 +26,7 @@ class LandingPage extends Component {
 
         return (
             <div className="container">
+                <SearchBar />
                 <h1>{this.state.heading}</h1>
                 <div>
                     {trackArray}

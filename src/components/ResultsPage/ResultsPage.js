@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import ResultsListItem from '../ResultsListItem/ResultsListItem';
+import SearchBar from '../SearchBar/SearchBar';
 
 class ResultsPage extends Component {
     state = {
@@ -23,6 +24,7 @@ class ResultsPage extends Component {
 
         return (
             <div className="container">
+                <SearchBar />
                 <h2>{this.state.heading}</h2>
                 <div>
                     {resultsArray}

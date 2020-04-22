@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import ArtistList from '../ArtistList/ArtistList';
-import './ArtistsPage.css';
+// import './ArtistsPage.css';
 
 class ArtistsPage extends Component {
 

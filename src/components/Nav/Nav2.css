@@ -1,0 +1,12 @@
+.nav {
+    text-align: center;
+}
+
+.nav-title {
+    font-size: 90px;
+    display: inline-block;
+    -webkit-text-stroke: 3px black;
+    color: #f2f2f2;
+    align-content: center;
+}
+

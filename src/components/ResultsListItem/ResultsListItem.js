@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import Grid from '@material-ui/core/Grid';
 import { Howl } from 'howler';
-import './ResultsListItem.css';
+// import './ResultsListItem.css';
 
 class ResultsListItem extends Component {
     state = {

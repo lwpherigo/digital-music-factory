@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import mapStoreToProps from '../../redux/mapStoreToProps';
-import './SearchBar.css';
+// import './SearchBar.css';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
@@ -30,7 +30,7 @@ class SearchBar extends Component {
                     variant="outlined"
                     type="text"
                     name="search"
-                    placeholder="Track, Arist, Etc."
+                    placeholder="Track, Artist, Etc."
                     onChange={this.handleInputChange('searchTerm')}
                 />
                 <Link to="/results">  
