@@ -10,3 +10,15 @@
     align-content: center;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 15px;
+    padding: 10px 10px;
+
+    /* these last two make the logout button in
+    the nav bar look like another link */
+    border:none;
+    cursor: pointer;
+    font: gotham;
+}

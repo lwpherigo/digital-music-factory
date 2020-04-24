@@ -15,7 +15,7 @@ const Nav = (props) => (
       <h2 className="nav-title">Digital Music Factory</h2>
     </Link>
 
-    <SearchBar />
+    {/* <SearchBar /> */}
 
     <div className="nav-right">
 
