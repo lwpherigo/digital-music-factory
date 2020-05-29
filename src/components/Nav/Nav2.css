@@ -3,6 +3,8 @@
 }
 
 .nav-title {
+    margin: 0px;
+    padding: 20px 0px 25px 0px;
     font-size: 90px;
     display: inline-block;
     -webkit-text-stroke: 3px black;
@@ -14,7 +16,7 @@
     text-decoration: none;
     color: #2c2c2c;
     font-size: 15px;
-    padding: 10px 10px;
+    padding: 5px 20px;
 
     /* these last two make the logout button in
     the nav bar look like another link */
