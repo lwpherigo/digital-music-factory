@@ -30,7 +30,7 @@ class LandingPage extends Component {
                 <div>
                     {trackArray}
                 </div>
-            </div>
+            </div> 
         );
     }
 }

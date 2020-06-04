@@ -2,8 +2,13 @@ h1 {
     /* padding-top: 20px; */
     text-align: center;
     font-size: 45px;
-    color: white;
+    color: rgb(187, 62, 62);
     margin-top: 0;
+}
+
+p {
+    padding-top: 10px;
+    font-size: 20px;
 }
 
 .inputs {
@@ -17,5 +22,5 @@ h1 {
 }
 
 .link-button {
-    padding-top: 30px;
+    padding: 0px;
 }

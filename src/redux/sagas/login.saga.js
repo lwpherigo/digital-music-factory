@@ -1,5 +1,6 @@
 import { put, takeLatest } from 'redux-saga/effects';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 // worker Saga: will be fired on "LOGIN" actions
 function* loginUser(action) {
@@ -27,6 +28,7 @@ function* loginUser(action) {
       // if user isn't in the database or
       // if the username and password don't match in the database
       yield put({ type: 'LOGIN_FAILED' });
+      Swal.fire('Oops!', 'Make sure your username and password are correct.', 'error');
     } else {
       // Got an error that wasn't a 401
       // Could be anything, but most common cause is the server is not started

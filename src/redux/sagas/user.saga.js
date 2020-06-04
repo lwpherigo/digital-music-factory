@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { put, takeLatest } from 'redux-saga/effects';
+import Swal from 'sweetalert2';
 
 // worker Saga: will be fired on "FETCH_USER" actions
 function* fetchUser() {
@@ -19,6 +20,7 @@ function* fetchUser() {
     // with an id and username set the client-side user object to let
     // the client-side code know the user is logged in
     yield put({ type: 'SET_USER', payload: response.data });
+    Swal.fire("You're in!", 'Have fun exploring!', 'success');
   } catch (error) {
     console.log('User get request failed', error);
   }

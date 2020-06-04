@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import Swal from 'sweetalert2';
 
 // loginMessage holds the string that will display
 // on the login screen if there's an error
@@ -9,7 +10,7 @@ const loginMessage = (state = '', action) => {
     case 'LOGIN_INPUT_ERROR':
       return 'Enter your username and password!';
     case 'LOGIN_FAILED':
-      return 'Oops! The username and password didn\'t match. Try again!';
+      return '';
     case 'LOGIN_FAILED_NO_CODE':
       return 'Oops! Something went wrong! Is the server running?';
     default:

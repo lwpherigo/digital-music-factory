@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import './LoginPage.css';
+import Swal from 'sweetalert2';
 
 class LoginPage extends Component {
   state = {
@@ -12,6 +13,8 @@ class LoginPage extends Component {
   login = (event) => {
     event.preventDefault();
 
+
+
     if (this.state.username && this.state.password) {
       this.props.dispatch({
         type: 'LOGIN',
@@ -20,7 +23,7 @@ class LoginPage extends Component {
           password: this.state.password,
         },
       });
-    } else {
+    } else {  
       this.props.dispatch({ type: 'LOGIN_INPUT_ERROR' });
     }
   } // end login
@@ -43,7 +46,6 @@ class LoginPage extends Component {
           </h2>
         )}
         <form onSubmit={this.login}>
-          <h1>Login</h1>
           <p>Log in and start exploring our world of music!</p>
           <div className="inputs">
             <label htmlFor="username">
