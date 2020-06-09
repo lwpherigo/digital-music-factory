@@ -4,6 +4,9 @@ import mapStoreToProps from '../../redux/mapStoreToProps';
 import './LoginPage.css';
 import Swal from 'sweetalert2';
 
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+
 class LoginPage extends Component {
   state = {
     username: '',
