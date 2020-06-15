@@ -13,7 +13,11 @@ p {
 
 .inputs {
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    color: rgb(32, 25, 25);
 }
 
 .login-button {

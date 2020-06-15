@@ -52,25 +52,43 @@ class LoginPage extends Component {
           <p>Log in and start exploring our world of music!</p>
           <div className="inputs">
             <label htmlFor="username">
-              Username:
-              <br />
-              <input
+              {/* <input
                 type="text"
                 name="username"
                 value={this.state.username}
                 onChange={this.handleInputChangeFor('username')}
+              /> */}
+              <TextField 
+                style={{ margin: '13px', flex: '1' }}
+                variant='outlined'
+                size='small'
+                type='text'
+                className='inputs'
+                label='Username'
+                value={this.state.username}
+                onChange={this.handleInputChangeFor('username')}
+                required
               />
             </label>
           </div>
           <div className="inputs">
             <label htmlFor="password">
-              Password:
-              <br />
-              <input
+              {/* <input
                 type="password"
                 name="password"
                 value={this.state.password}
                 onChange={this.handleInputChangeFor('password')}
+              /> */}
+              <TextField 
+                style={{ margin: '13px', flex: '1' }}
+                variant='outlined'
+                size='small'
+                type='text'
+                className='inputs'
+                label='Password'
+                value={this.state.password}
+                onChange={this.handleInputChangeFor('password')}
+                required
               />
             </label>
           </div>
