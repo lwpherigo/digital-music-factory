@@ -93,12 +93,16 @@ class LoginPage extends Component {
             </label>
           </div>
           <div className="login-button">
-            <input
+            <Button
+              style={{ margin: '20px' }}
+              variant='contained'
               className="log-in"
               type="submit"
               name="submit"
               value="Log In"
-            />
+            >
+              Login
+            </Button>
           </div>
         </form>
         <br />
