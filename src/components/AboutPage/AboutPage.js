@@ -12,7 +12,7 @@ const AboutPage = () => (
     
     <p>
       Digital Music Factory knows that as an online creator or small production company, it can be hard to find good, 
-      high-quality music that is royalty-free. The struggle of dealing with 2-4 copyrights can get tricky, not to mention expensive.
+      high-quality music that is royalty-free. The struggle of dealing with 2-4 copyrights can get tricky, not to mention VERY expensive.
     </p>
     <p>
       That's why we, here at DMF, are committed to finding new, cool artists for you to use in your projects. Whether it's an ad campaign for
