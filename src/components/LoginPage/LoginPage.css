@@ -29,4 +29,12 @@ p {
 
 .link-button {
     padding: 0px;
+    margin: 0px;
+}
+
+.register-text {
+    color: rgb(184, 70, 70);
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-style: bold;
 }
