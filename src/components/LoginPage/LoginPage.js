@@ -83,7 +83,8 @@ class LoginPage extends Component {
                 style={{ margin: '13px', flex: '1' }}
                 variant='outlined'
                 size='small'
-                type='text'
+                type='password'
+                name='password'
                 className='inputs'
                 label='Password'
                 value={this.state.password}
